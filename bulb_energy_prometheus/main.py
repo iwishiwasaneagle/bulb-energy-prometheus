@@ -88,6 +88,8 @@ def run():
             " environment variable."
         )
         sys.exit(1)
+    else:
+        print("SmartThings API Token was provided. Resuming operation.")
 
     start_http_server(8023)
     loop = asyncio.new_event_loop()
