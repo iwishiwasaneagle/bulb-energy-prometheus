@@ -89,7 +89,7 @@ def run():
         )
         sys.exit(1)
     else:
-        print(f"SmartThings API Token was provided: {os.environ.get("SMARTTHINGS_API_TOKEN")}. Resuming operation.")
+        print("SmartThings API Token was provided. Resuming operation.")
 
     start_http_server(8023)
     loop = asyncio.new_event_loop()
