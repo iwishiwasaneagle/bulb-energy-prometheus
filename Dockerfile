@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . .
 RUN pip3 install -e .
 
-ENTRYPOINT ["/usr/local/bin/bulb-energy-prometheus"]
+CMD ["/usr/local/bin/bulb-energy-prometheus"]
